@@ -1,0 +1,22 @@
+[
+  {
+    "id": "v001",
+    "year": "2021",
+    "make": "Audi",
+    "model": "RS7",
+    "price": "89900",
+    "mileage": "22,000 km",
+    "type": "Sedan",
+    "image": "audi-rs7.jpg"
+  },
+  {
+    "id": "v002",
+    "year": "2020",
+    "make": "BMW",
+    "model": "M4",
+    "price": "59900",
+    "mileage": "30,500 km",
+    "type": "Coupe",
+    "image": "bmw-m4.jpg"
+  }
+]
