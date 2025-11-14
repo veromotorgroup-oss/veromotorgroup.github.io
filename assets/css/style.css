@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #eee;
+}
+
+.site-header {
+  padding: 10px 20px;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  color: #eee;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.nav a.active {
+  color: gold;
+}
+
+h1, h2 {
+  color: gold;
+}
