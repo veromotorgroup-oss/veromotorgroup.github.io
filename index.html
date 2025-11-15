@@ -29,7 +29,7 @@
     top: 0;
     z-index: 20;
     height: 90px;
-    border-bottom: 2px solid #bfa100;
+    border-bottom: 2px solid #BFA100;
   }
 
   .logo img {
@@ -53,7 +53,7 @@
 
   nav ul li a:hover,
   nav ul li a.active {
-    color: #bfa100; /* darker luxury gold */
+    color: #BFA100;
   }
 
   /* HERO SECTION */
@@ -63,23 +63,27 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding-bottom: 150px; /* button lower */
+    padding-bottom: 150px; /* move button lower */
     text-align: center;
   }
 
+  /* VIEW INVENTORY BUTTON */
   .hero button {
-    background: #bfa100; /* luxury dark gold */
-    border: none;
+    background: #000; /* black background */
+    color: #BFA100; /* gold text matching header */
+    border: 2px solid #BFA100;
     padding: 18px 45px;
     font-size: 1.35rem;
-    cursor: pointer;
-    color: #000;
     font-weight: bold;
     border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
 
   .hero button:hover {
-    background: #d4b200;
+    background: #1a1a1a; /* slightly lighter black */
+    color: #FFD700; /* brighter gold on hover */
+    border-color: #FFD700;
   }
 
   /* GLOBAL FOOTER */
@@ -131,5 +135,3 @@
 
 </body>
 </html>
-
-
