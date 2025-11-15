@@ -20,10 +20,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 20;
   }
 
   .logo img {
-    height: 40px;
+    height: 45px;
   }
 
   nav ul {
@@ -40,7 +43,8 @@
     font-size: 1rem;
   }
 
-  nav ul li a:hover {
+  nav ul li a:hover,
+  nav ul li a.active {
     color: #FFD700;
   }
 
@@ -50,7 +54,8 @@
     background: url('images/hero.jpg') center center/cover no-repeat;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    padding-bottom: 120px; /* moves button down */
     text-align: center;
     position: relative;
   }
@@ -58,7 +63,7 @@
   .hero button {
     background: #FFD700;
     border: none;
-    padding: 15px 35px;
+    padding: 16px 40px;
     font-size: 1.3rem;
     cursor: pointer;
     color: #000;
@@ -69,6 +74,22 @@
   .hero button:hover {
     background: #e6c200;
   }
+
+  /* GLOBAL FOOTER */
+  footer {
+    background: #111;
+    padding: 25px;
+    margin-top: 0;
+    text-align: center;
+    color: #ccc;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+  }
+
+  footer p {
+    margin: 5px 0;
+  }
+
 </style>
 </head>
 
@@ -85,16 +106,6 @@
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="inventory.html">Inventory</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+      <li><a
 
-<!-- HERO SECTION ONLY -->
-<section class="hero">
-  <button onclick="window.location.href='inventory.html'">View Inventory</button>
-</section>
-
-</body>
-</html>
 
