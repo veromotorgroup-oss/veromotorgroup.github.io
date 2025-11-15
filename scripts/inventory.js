@@ -1,11 +1,11 @@
-// inventory.js - load cars and show modal on click
+// Load inventory.json and display vehicles
 fetch('../inventory.json')
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('inventory-container');
 
     if (!data || data.length === 0) {
-      container.innerHTML = "<p>No vehicles available right now. Check back soon.</p>";
+      container.innerHTML = "<p style='color: #f5f5f5;'>No vehicles available right now. Check back soon.</p>";
       return;
     }
 
@@ -27,9 +27,7 @@ fetch('../inventory.json')
 
       container.appendChild(card);
 
-      // Modal functionality
-      const btn = card.querySelector('.details-btn');
-      btn.addEventListener('click', (e) => {
+      card.querySelector('.details-btn').addEventListener('click', (e) => {
         e.preventDefault();
         showCarModal(car);
       });
@@ -37,10 +35,9 @@ fetch('../inventory.json')
   })
   .catch(error => {
     console.error("Error loading inventory:", error);
-    document.getElementById('inventory-container').innerHTML = "<p>Error loading inventory.</p>";
+    document.getElementById('inventory-container').innerHTML = "<p style='color: #f5f5f5;'>Error loading inventory.</p>";
   });
 
-// Modal function
 function showCarModal(car) {
   const imageSrc = car.image ? `../images/${car.image}` : `../images/placeholder.jpg`;
 
@@ -50,13 +47,15 @@ function showCarModal(car) {
         <span class="close-modal">&times;</span>
         <h2>${car.year} ${car.make} ${car.model}</h2>
         <img src="${imageSrc}" alt="${car.make} ${car.model}">
-        <p>${car.description || 'No description available.'}</p>
-        <p><strong>Carfax:</strong> ${car.carfax || 'No Carfax info.'}</p>
+        <p style="color: #f5f5f5;">${car.description || 'No description available.'}</p>
+        <p style="color: #f5f5f5;"><strong>Carfax:</strong> ${car.carfax || 'No Carfax info.'}</p>
       </div>
     </div>
   `;
+
   document.body.insertAdjacentHTML('beforeend', modalHtml);
 
   const modal = document.querySelector('.modal-overlay');
   modal.querySelector('.close-modal').addEventListener('click', () => modal.remove());
 }
+
