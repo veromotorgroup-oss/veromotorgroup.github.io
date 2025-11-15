@@ -1,5 +1,4 @@
 [
-[
   {
     "id": "v001",
     "year": "2021",
@@ -24,16 +23,28 @@
     "description": "High-performance coupe with low mileage and excellent handling.",
     "carfax": "One previous owner, no accidents"
   },
-  {
+   {
     "id": "v003",
     "year": "2023",
-    "make": "fFORD",
+    "make": "Ford",
     "model": "F350",
     "price": "87000",
-    "mileage": "40,500 km",
+    "mileage": "40,813 km",
     "type": "Truck",
     "image": "placeholder.jpg",
-    "description": "HWork Horse with low mileage.",
+    "description": "Work Horse low mileage and excellent condition.",
+    "carfax": "One previous owner, no accidents"
+  }, 
+  {
+    "id": "v004",
+    "year": "2023",
+    "make": "FORD",
+    "model": "LIGHTNING",
+    "price": "800000",
+    "mileage": "33,567 km",
+    "type": "TRUCK",
+    "image": "placeholder.jpg",
+    "description": "EV Truck with low mileage.",
     "carfax": "One previous owner, no accidents"
   }
 ]
