@@ -1,4 +1,5 @@
 [
+[
   {
     "id": "v001",
     "year": "2021",
@@ -8,7 +9,7 @@
     "mileage": "22,000 km",
     "type": "Sedan",
     "image": "placeholder.jpg",
-    "description": "Sporty luxury sedan with premium interior.",
+    "description": "Sporty luxury sedan with premium interior and performance.",
     "carfax": "Clean title, no accidents"
   },
   {
@@ -20,10 +21,10 @@
     "mileage": "30,500 km",
     "type": "Coupe",
     "image": "placeholder.jpg",
-    "description": "High-performance coupe with low mileage.",
+    "description": "High-performance coupe with low mileage and excellent handling.",
     "carfax": "One previous owner, no accidents"
-  }
-   {
+  },
+  {
     "id": "v003",
     "year": "2023",
     "make": "fFORD",
