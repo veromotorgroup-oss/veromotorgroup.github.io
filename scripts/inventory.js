@@ -1,4 +1,5 @@
-// Load inventory.json and display vehicles
+// inventory.js - Load cars from inventory.json and display as cards
+
 fetch('../inventory.json')
   .then(response => response.json())
   .then(data => {
@@ -13,12 +14,14 @@ fetch('../inventory.json')
       const card = document.createElement('div');
       card.className = "car-card";
 
+      // Use placeholder if car.image is missing
+      const imageSrc = car.image ? `../images/${car.image}` : `../images/placeholder.jpg`;
+
       card.innerHTML = `
-        <img src="${car.image || 'images/placeholder.jpg'}" alt="${car.make} ${car.model}">
+        <img src="${imageSrc}" alt="${car.make} ${car.model}">
         <h3>${car.year} ${car.make} ${car.model}</h3>
         <p>Price: $${car.price}</p>
-        <p>Mileage: ${car.mileage} km</p>
-        <p>${car.description || ''}</p>
+        <p>Mileage: ${car.mileage}</p>
       `;
 
       container.appendChild(card);
@@ -28,3 +31,4 @@ fetch('../inventory.json')
     console.error("Error loading inventory:", error);
     document.getElementById('inventory-container').innerHTML = "<p>Error loading inventory.</p>";
   });
+
