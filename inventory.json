@@ -4,29 +4,36 @@
     "year": "2021",
     "make": "Audi",
     "model": "RS7",
-    "price": "109900",
+    "price": "89900",
     "mileage": "22,000 km",
     "type": "Sedan",
-    "image": "placeholder.jpg"
+    "image": "placeholder.jpg",
+    "description": "Sporty luxury sedan with premium interior.",
+    "carfax": "Clean title, no accidents"
   },
   {
     "id": "v002",
-    "year": "2016",
+    "year": "2020",
     "make": "BMW",
     "model": "M4",
     "price": "59900",
     "mileage": "30,500 km",
     "type": "Coupe",
-    "image": "placeholder.jpg"
-  },
-    {
+    "image": "placeholder.jpg",
+    "description": "High-performance coupe with low mileage.",
+    "carfax": "One previous owner, no accidents"
+  }
+   {
     "id": "v003",
     "year": "2023",
-    "make": "Ford",
+    "make": "fFORD",
     "model": "F350",
-    "price": "890000",
-    "mileage": "30,500 km",
+    "price": "87000",
+    "mileage": "40,500 km",
     "type": "Truck",
-    "image": "placeholder.jpg"
+    "image": "placeholder.jpg",
+    "description": "HWork Horse with low mileage.",
+    "carfax": "One previous owner, no accidents"
   }
 ]
+
