@@ -7,7 +7,7 @@
     "price": "109900",
     "mileage": "22,000 km",
     "type": "Sedan",
-    "image": "placeholder.jpg"
+    "images": "placeholder.jpg"
   },
   {
     "id": "v002",
@@ -17,7 +17,7 @@
     "price": "59900",
     "mileage": "30,500 km",
     "type": "Coupe",
-    "image": "placeholder.jpg"
+    "images": "placeholder.jpg"
   },
     {
     "id": "v003",
@@ -27,6 +27,6 @@
     "price": "890000",
     "mileage": "30,500 km",
     "type": "Truck",
-    "image": "placeholder.jpg"
+    "images": "placeholder.jpg"
   }
 ]
