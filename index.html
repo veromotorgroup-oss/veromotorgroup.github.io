@@ -4,39 +4,129 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vero Motor Group</title>
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<!-- Prevent caching -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 
 <style>
-  body { margin:0; font-family:Arial,sans-serif; background:#000; color:#fff; }
-  nav { background:#111; padding:20px 30px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; border-bottom:2px solid #BFA100; z-index:20; }
-  .logo img { height:70px; object-fit:contain; }
-  nav ul { list-style:none; display:flex; gap:28px; margin:0; padding:0; }
-  nav ul li a { color:#f5f5f5; text-decoration:none; font-size:1.05rem; }
-  nav ul li a:hover, nav ul li a.active { color:#BFA100; }
-  .hero { background-image:url('images/hero.jpg'); height:80vh; background-size:cover; background-position:center; display:flex; justify-content:center; align-items:center; flex-direction:column; text-align:center; }
-  .hero button { padding:15px 30px; font-size:1.2rem; background:#000; color:#BFA100; border:2px solid #BFA100; cursor:pointer; transition:all 0.3s ease; border-radius:6px; }
-  .hero button:hover { background:#1a1a1a; color:#FFD700; border-color:#BFA100; }
-  footer { background:#111; padding:25px; text-align:center; color:#ccc; font-size:0.9rem; border-top:1px solid #222; }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+  }
+
+  /* GLOBAL HEADER */
+  nav {
+    background: #111;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    height: 90px;
+    border-bottom: 2px solid #BFA100;
+  }
+
+  .logo img {
+    height: 70px;
+    object-fit: contain;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 1.05rem;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: #BFA100;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    height: 90vh;
+    background: url('images/hero.jpg') center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 150px; /* move button lower */
+    text-align: center;
+  }
+
+  /* VIEW INVENTORY BUTTON */
+  .hero button {
+    background: #000; /* black background */
+    color: #BFA100; /* gold text matching header */
+    border: 2px solid #BFA100;
+    padding: 18px 45px;
+    font-size: 1.35rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .hero button:hover {
+    background: #1a1a1a; /* slightly lighter black */
+    color: #FFD700; /* brighter gold on hover */
+    border-color: #FFD700;
+  }
+
+  /* GLOBAL FOOTER */
+  footer {
+    background: #111;
+    padding: 25px;
+    text-align: center;
+    color: #ccc;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+  }
+
+  footer p {
+    margin: 6px 0;
+  }
+
 </style>
 </head>
+
 <body>
 
+<!-- GLOBAL HEADER -->
 <header>
-<nav>
-  <div class="logo"><img src="images/logo.jpg" alt="Vero Motor Group Logo"></div>
-  <ul>
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="inventory.html">Inventory</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+  <nav>
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Vero Motor Group Logo">
+    </div>
+
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="inventory.html">Inventory</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<div class="hero">
+<!-- HERO SECTION -->
+<section class="hero">
   <button onclick="window.location.href='inventory.html'">View Inventory</button>
-</div>
+</section>
 
+<!-- GLOBAL FOOTER -->
 <footer>
   <p>© 2025 Vero Motor Group. All Rights Reserved.</p>
   <p>2118, 21320 Westminster Hwy, Richmond, BC V6V 2X5</p>
