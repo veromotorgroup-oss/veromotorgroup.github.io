@@ -1,46 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Vero Motor Group — Your Journey to Excellence</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vero Motor Group | Home</title>
+  <style>
+    body { margin: 0; background: #000; color: #f5f5f5; font-family: Arial, sans-serif; }
+    header nav { background-color:#111; padding:15px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; }
+    header nav .logo { color:#FFD700; font-size:1.5rem; font-weight:bold; }
+    header nav ul { list-style:none; margin:0; padding:0; display:flex; gap:20px; }
+    header nav ul li a { color:#f5f5f5; text-decoration:none; }
+    header nav ul li a.active { color: #FFD700; }
+
+    .hero {
+      background: url('images/hero.jpg') center/cover no-repeat;
+      height: 70vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:#FFDOUTLINE;
+    }
+    .hero h1 { font-size:3rem; margin: 0 0 20px; color: #FFD700; }
+    .hero p { font-size:1.3rem; margin-bottom:30px; }
+    .hero a { background:#FFD700; color:#000; padding:15px 30px; border-radius:5px; font-weight:bold; text-decoration:none; }
+
+    footer { background:#111; padding:20px; text-align:center; font-size:0.9rem; color:#f5f5f5; }
+    footer a { color: #FFD700; text-decoration: none; }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <h1>Vero Motor Group</h1>
-        <p class="tag">Your trusted partner in finding the perfect vehicle.</p>
-      </div>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="inventory.html">Inventory</a>
-        <a href="contact.html">Contact</a>
-        <a class="call-btn" href="tel:604-729-9740">604-729-9740</a>
-      </nav>
-    </div>
+  <header>
+    <nav>
+      <div class="logo">Vero Motor Group</div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="container hero-inner">
-        <h2>Your Journey to Excellence Begins Here</h2>
-        <p>Discover premium vehicles backed by exceptional service and unmatched quality.</p>
-        <div class="hero-ctas">
-          <a class="btn primary" href="inventory.html">Get Started</a>
-          <a class="btn outline" href="contact.html">Schedule Test Drive</a>
-          <a class="btn transparent" href="tel:604-729-9740">Call Us</a>
-        </div>
-      </div>
-    </section>
-  </main>
+  <section class="hero">
+    <h1>Your Luxury Drive Awaits</h1>
+    <p>Exclusive selection. Premium service. Vero Motor Group.</p>
+    <a href="inventory.html">View Inventory</a>
+  </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2024 Vero Motor Group. All rights reserved. | 604-729-9740</p>
-    </div>
+  <footer>
+    <p>© 2025 Vero Motor Group | 123 Main St, Vancouver, BC | (123) 456-7890</p>
+    <p>Follow us: <a href="#">Instagram</a> • <a href="#">Facebook</a></p>
   </footer>
 </body>
 </html>
+
