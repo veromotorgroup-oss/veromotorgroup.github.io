@@ -1,2 +1,59 @@
-<div id="inventory-container"></div>
-<script src="scripts/inventory.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory | Vero Motor Group</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #inventory-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .car-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            padding: 15px;
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .car-card h3 {
+            margin: 10px 0 5px;
+        }
+
+        .car-card p {
+            margin: 5px 0;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Available Inventory</h1>
+
+    <div id="inventory-container"></div>
+
+    <script src="scripts/inventory.js"></script>
+</body>
+</html>
