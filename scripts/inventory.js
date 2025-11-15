@@ -1,5 +1,5 @@
 // Load inventory.json and display vehicles
-fetch('../inventory.json')
+fetch('inventory.json') // Correct path for GitHub Pages
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('inventory-container');
@@ -13,7 +13,7 @@ fetch('../inventory.json')
       const card = document.createElement('div');
       card.className = "car-card";
 
-      const imageSrc = car.image ? `../images/${car.image}` : `../images/placeholder.jpg`;
+      const imageSrc = car.image ? `images/${car.image}` : `images/placeholder.jpg`;
 
       card.innerHTML = `
         <img src="${imageSrc}" alt="${car.make} ${car.model}">
@@ -39,7 +39,7 @@ fetch('../inventory.json')
   });
 
 function showCarModal(car) {
-  const imageSrc = car.image ? `../images/${car.image}` : `../images/placeholder.jpg`;
+  const imageSrc = car.image ? `images/${car.image}` : `images/placeholder.jpg`;
 
   const modalHtml = `
     <div class="modal-overlay">
@@ -58,4 +58,3 @@ function showCarModal(car) {
   const modal = document.querySelector('.modal-overlay');
   modal.querySelector('.close-modal').addEventListener('click', () => modal.remove());
 }
-
