@@ -23,7 +23,7 @@
     "description": "High-performance coupe with low mileage and excellent handling.",
     "carfax": "One previous owner, no accidents"
   },
-   {
+  {
     "id": "v003",
     "year": "2023",
     "make": "Ford",
@@ -34,7 +34,7 @@
     "image": "placeholder.jpg",
     "description": "Work Horse low mileage and excellent condition.",
     "carfax": "One previous owner, no accidents"
-  }, 
+  },
   {
     "id": "v004",
     "year": "2023",
@@ -48,4 +48,5 @@
     "carfax": "One previous owner, no accidents"
   }
 ]
+
 
